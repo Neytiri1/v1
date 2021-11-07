@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@media screen and (min-width: 901px) {
+  .l-in__body {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .l-in__body {
+    margin-top: 30px;
+  }
+}
+
+.grille {
+	margin: 30px auto;
+	display: grid;
+    grid-template-columns: repeat(auto-fill,340px);
+    justify-content: center;
+    grid-gap: 20px;
+}
+.chapter{
+	border-radius: 5px;
+}
+.chapter img{
+	border-radius: 5px 5px 5px 0;
+	width: 100%;
+	height: auto;
+}
+.chapter p{
+	color: #fff;
+}
+.chapter:hover {
+	transform: scale(1.05);
+	transition: all 0.4s;
+}
+
+@media screen and (max-width: 900px) {
+  .grille {
+    grid-template-columns: repeat(auto-fill,80%);
+  }
+}

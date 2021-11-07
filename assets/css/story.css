@@ -1,0 +1,304 @@
+@charset "UTF-8";
+.l-in__content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.l-in__head {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1080px;
+}
+
+@media screen and (min-width: 901px) {
+  .l-in__body {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .l-in__body {
+    margin-top: 8px;
+  }
+}
+
+.p-story .c-localnav {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1080px;
+}
+
+@media screen and (min-width: 901px) {
+  .p-story .c-localnav {
+    padding-bottom: 40px;
+  }
+}
+
+.p-story .c-localnav__list-item {
+  font-family: YakuHanJP, "Teko", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 900px) {
+  .p-story .c-localnav__list-item {
+    font-size: 20px;
+    font-size: 5.35vw;
+  }
+}
+
+.p-story .c-localnav__list-item .p-in-txt {
+  padding: 0 14px 6px;
+}
+
+@media (-ms-high-contrast: none) {
+  .p-story .c-localnav__list-item .p-in-txt {
+    padding: 6px 14px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .p-story .c-localnav__list-item .p-in-txt {
+    padding: 0 10px 4px;
+  }
+}
+
+@media screen and (max-width: 900px) and (-ms-high-contrast: none) {
+  .p-story .c-localnav__list-item .p-in-txt {
+    padding: 4px 10px 0;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 300px) {
+  .p-story .c-localnav__list-item .p-in-txt {
+    padding: 0 6px 2px;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 300px) and (-ms-high-contrast: none) {
+  .p-story .c-localnav__list-item .p-in-txt {
+    padding: 2px 6px 0;
+  }
+}
+
+.p-story__inner {
+  position: relative;
+  padding: 42px 0 58px;
+}
+
+@media screen and (max-width: 900px) {
+  .p-story__inner {
+    padding: 12px 0 25px;
+  }
+}
+
+.p-story__inner::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #2d9ee0;
+  width: 0;
+  height: 100%;
+  pointer-events: none;
+  content: "";
+}
+
+.is-load .p-story__inner::after {
+  -webkit-animation: curtain 1s cubic-bezier(0.77, 0, 0.175, 1) forwards 1s;
+          animation: curtain 1s cubic-bezier(0.77, 0, 0.175, 1) forwards 1s;
+}
+
+.p-story__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.is-load .p-story__bg figure {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+  -webkit-transition: opacity 0.2s linear 1.5s, -webkit-transform 12s cubic-bezier(0.25, 1, 0.5, 1) 1.5s;
+  transition: opacity 0.2s linear 1.5s, -webkit-transform 12s cubic-bezier(0.25, 1, 0.5, 1) 1.5s;
+  transition: transform 12s cubic-bezier(0.25, 1, 0.5, 1) 1.5s, opacity 0.2s linear 1.5s;
+  transition: transform 12s cubic-bezier(0.25, 1, 0.5, 1) 1.5s, opacity 0.2s linear 1.5s, -webkit-transform 12s cubic-bezier(0.25, 1, 0.5, 1) 1.5s;
+}
+
+.p-story__bg figure {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(1.08);
+      -ms-transform: scale(1.08);
+          transform: scale(1.08);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.p-story__content {
+  position: relative;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1080px;
+}
+
+.is-load .p-story__content {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+  -webkit-transition: opacity 1s linear 1.5s;
+  transition: opacity 1s linear 1.5s;
+}
+
+.p-story__content-cap {
+  font-family: YakuHanJP, "Teko", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0.09em;
+  line-height: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .p-story__content-cap {
+    font-size: 24px;
+    font-size: 6.4vw;
+    letter-spacing: 0.07em;
+  }
+}
+
+.p-story__content-txt {
+  margin-top: 32px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  line-height: 1.85;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1080px) {
+  .p-story__content-txt {
+    font-size: 13px;
+    letter-spacing: normal;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .p-story__content-txt {
+    margin-top: 14px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+  }
+}
+
+.p-story__content-txt .p-in-txt + .p-in-txt {
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 900px) {
+  .p-story__content-txt .p-in-txt + .p-in-txt {
+    margin-top: 20px;
+  }
+}
+
+.p-story__content-txt .p-in-txt + .p-in-catch {
+  margin-top: 43px;
+}
+
+@media screen and (max-width: 900px) {
+  .p-story__content-txt .p-in-txt + .p-in-catch {
+    margin-top: 20px;
+  }
+}
+
+.p-story__content-txt .p-in-catch {
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1080px) {
+  .p-story__content-txt .p-in-catch {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .p-story__content-txt .p-in-catch {
+    font-size: 16px;
+    font-size: 4.25vw;
+    letter-spacing: normal;
+  }
+}
+
+.p-story__content-txt .p-in-catch + .p-in-txt {
+  margin-top: 43px;
+}
+
+@media screen and (max-width: 900px) {
+  .p-story__content-txt .p-in-catch + .p-in-txt {
+    margin-top: 20px;
+  }
+}
+
+.p-story__content-txt .p-in-subcatch {
+  margin-top: 10px;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  line-height: 2;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1080px) {
+  .p-story__content-txt .p-in-subcatch {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .p-story__content-txt .p-in-subcatch {
+    margin-top: 2px;
+    font-size: 13px;
+    font-size: 3.45vw;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+  }
+}
+
+.p-story__content-txt .p-in-note {
+  margin-top: 50px;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1080px) {
+  .p-story__content-txt .p-in-note {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .p-story__content-txt .p-in-note {
+    margin-top: 30px;
+    font-size: 10px;
+  }
+}
+
+.p-story__content-txt .p-in-note li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
