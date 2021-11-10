@@ -134,7 +134,7 @@
           </h2>
         </div>
         <div class="l-in__body">
-                    <div class="c-localnav">
+<div class="c-localnav">
   <ul class="c-localnav__list">
     <li class="c-localnav__list-item c-frame">
       <ul class="c-frame__line">
@@ -184,118 +184,153 @@
       <p class="p-in-txt">CHARACTER</p>
       <a href=""></a>
     </li>
-  </ul>
-</div>                    <div class="p-chara__content">
-            <ul class="p-chara__thumb">
-                            <li class="p-chara__thumb-item js-charaslide-thumb is-current" data-index-num="0">
-                <img src="../../assets/img/character/thumb_kirito_off.jpg" alt="" class="is-off">
-                <img src="../../assets/img/character/thumb_kirito_on.jpg" alt="" class="is-on">
-              </li>
-                            <li class="p-chara__thumb-item js-charaslide-thumb" data-index-num="1">
-                <img src="../../assets/img/character/thumb_asuna_off.jpg" alt="" class="is-off">
-                <img src="../../assets/img/character/thumb_asuna_on.jpg" alt="" class="is-on">
-              </li>
-                            <li class="p-chara__thumb-item js-charaslide-thumb" data-index-num="2">
-                <img src="../../assets/img/character/thumb_mito_off.jpg" alt="" class="is-off">
-                <img src="../../assets/img/character/thumb_mito_on.jpg" alt="" class="is-on">
-              </li>
-                          </ul>
-            <div class="p-chara__slide swiper-container" id="charaSlide">
-              <div class="p-chara__slide-wrap swiper-wrapper">
+   </ul>
+  </div> 
+</div>
+	
+	<style>
+	*,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}
 
-                <div class="p-chara__slide-item swiper-slide" data-hash="kirito">
-                  <div class="p-chara__info">
-                    <div class="p-chara__info-img">
-                      <img src="../../assets/img/character/chara_kirito.png" alt="">
-                    </div>
-                    <div class="p-chara__info-txt">
-                      <div class="p-in-bg">
-                        <img src="../../assets/img/character/name_bg_kirito.png" alt="">
-                      </div>
-                      <div class="p-in-name">
-                        <div class="p-in-name__inner">
-                          Kirito
-                        </div>
-                      </div>
-                      <div class="p-in-desc">
-                        Jet ea commodo consequat nim ad oidez, <i>Neytiri</i> fesada.<br>
-						Though she's pessimistic about ever being able to log out of the game, she resolves to fight on thanks to her comrade-in-arms’ encouraging words.
-                      </div>
-                    </div>
-                  </div>
-                </div>
+.character{
+	display: flex;
+	justify-content: center;
+	background: url(fond.png)center center no-repeat;
+	width:100%;
+	height:auto;
+	align-items: center;
+}
+.nav-left{
+	height:100%;
+}
+.icons img{
+	height:90px;
+	width:90px;
+	margin: 15px;
+	background-size:cover;
+}
+.character-info{
+	color:#fff;
+	font-size:18px;
+	line-height:1.5;
+	margin-left: 20px;
+}
+.character-info > img{
+	margin-top: 60px;
+}
+.character-cloth{
+	font-size:40px;
+	font-weight:bold;
+	line-height:40px;
+	padding-left:10px;
+	border-left:7px solid #00d6fe;
+	margin-bottom:30px;
+}
+.character-info-content{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;-ms-flex-align:center;
+	align-items:center;
+}
+.character-weapon{
+	padding-right:20px;
+	border-right:1px solid #fff;
+	width:58px;
+	height:66px;
+	-webkit-box-sizing:content-box;
+	box-sizing:content-box;
+}
+.character-description{
+	padding-left: 20px;
+}
+	</style>
 
-                <div class="p-chara__slide-item swiper-slide" data-hash="asuna">
+	<div class="character">
+				<div class="nav-left">
+					<div class="icons">
+						<img src="icon.png" onclick="Image1();">
+					</div>
+					<div class="icons">
+						<img src="icon2.png" onclick="Image2();">
+					</div>
+					<div class="icons">
+						<img src="icon3.png" onclick="Image3();">
+					</div>
+					<div class="icons">
+						<img src="icon4.png" onclick="Image4();">
+					</div>
+				</div>
+				<div class="perso">
+					<img id="image" src="perso.png" alt="perso">
+				</div>
+				<div class="character-info">
+					<div class="character-cloth">
+						<p id="name">Elysia</p>
+					</div>
+					<div class="character-info-content">
+						<div class="character-weapon">
+							<img src="arc.png">
+						</div>
+						<div class="character-description">
+							<div>
+								<p id="nickname">Elfe rose</p>
+							</div>
+							<div>
+								 <p id="height">163 cm/54,8 kg</p>
+							</div>
+							<div>
+								<p id="birthday">Anniversaire : 11 novembre</p>
+							</div>
+						</div>
+					</div>		
+					<img id="illustration" src="illustration.png">
+				</div>
+		</div>
+		
+		<script type="text/javascript">
+			var name_ = document.getElementById("name");
+			var nickname = document.getElementById("nickname");
+			var height = document.getElementById("height");
+			var birthday = document.getElementById("birthday");
+		
+			function Image1(){
+				document.getElementById("image").src = 'perso.png';
+				document.getElementById("illustration").src = 'illustration.png';
+				name_.innerHTML = "Elysia";
+				nickname.innerHTML = "Elfe rose";
+				height.innerHTML = "163 cm/54,8 kg";
+				birthday.innerHTML = "Anniversaire :11 novembre";
+			}
 
-                  <div class="p-chara__info">
-                    <ul class="p-chara__info-img p-chara__info-img_change-wrap">
-                      <li class="p-chara__info-img_change is-current" data-type="a01"><img src="../../assets/img/character/chara_asuna.png" alt=""></li>
-                      <li class="p-chara__info-img_change" data-type="a02"><img src="../../assets/img/character/chara_asuna_02.png" alt=""></li>
-                      <li class="p-chara__info-img_change" data-type="a03"><img src="../../assets/img/character/chara_asuna_03.png" alt=""></li>
-                    </ul>
-                    <div class="p-chara__info-txt">
-                      <div class="p-in-bg">
-                        <img src="../../assets/img/character/name_bg_asuna.png" alt="">
-                      </div>
-                      <div class="p-in-name">
-                        <div class="p-in-name__inner">
-                          Asuna
-                        </div>
-                      </div>
-                      <div class="p-in-desc">
-                        Commodo consequat nim ad oidez, <i>Neytiri</i> fesada.<br>
-						Though she's pessimistic about ever being able to log out of the game, she resolves to fight on thanks to her comrade-in-arms’ encouraging words.
-                      </div>
-                      <ul class="p-chara__change is-pc">
-                        <li class="p-chara__change-btn is-current" data-type="a01">
-                          <span>Asuna</span>
-                        </li>
-                        <li class="p-chara__change-btn" data-type="a02">
-                          <span>Asuna 2</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+			function Image2(){
+				document.getElementById("image").src = 'perso2.png';
+				document.getElementById("illustration").src = 'illustration2.png';
+				name_.innerHTML = "Kiana Kaslana";
+				nickname.innerHTML = "Herrscher des flammes";
+				height.innerHTML = "163cm / 49kg";
+				birthday.innerHTML = "Anniversaire : 7 Décembre";
+			}
 
-                <div class="p-chara__slide-item swiper-slide" data-hash="mito">
+			function Image3(){
+				document.getElementById("image").src = 'perso3.png';
+				document.getElementById("illustration").src = 'illustration3.png';
+				name_.innerHTML = "Bronya Zaychik";
+				nickname.innerHTML = "Haxxor lapine";
+				height.innerHTML = "163 cm/54,8 kg";
+				birthday.innerHTML = "Anniversaire : 18 août";
+			}
+			function Image4(){
+				document.getElementById("image").src = 'perso4.png';
+				document.getElementById("illustration").src = 'illustration4.png';
+				name_.innerHTML = "Durandal";
+				nickname.innerHTML = "Dea Anchora";
+				height.innerHTML = "165cm/54kg";
+				birthday.innerHTML = "Anniversaire : 1er janvier";
+			}
+		</script>
 
-                  <div class="p-chara__info">
-                    <ul class="p-chara__info-img p-chara__info-img_change-wrap">
-                      <li class="p-chara__info-img_change is-current" data-type="m01"><img src="../../assets/img/character/chara_mito.png" alt=""></li>
-                      <li class="p-chara__info-img_change" data-type="m02"><img src="../../assets/img/character/chara_mito_02.png" alt=""></li>
-                      <li class="p-chara__info-img_change" data-type="m03"><img src="../../assets/img/character/chara_mito_03.png" alt=""></li>
-                    </ul>
-                    <div class="p-chara__info-txt">
-                      <div class="p-in-bg">
-                        <img src="../../assets/img/character/name_bg_mito.png" alt="">
-                      </div>
-                      <div class="p-in-name">
-                        <div class="p-in-name__inner">
-                          Mito
-                        </div>
-                      </div>
-                      <div class="p-in-desc">
-                       Ea commodo consequat nim ad oidez, <i>Neytiri</i> fesada.<br>
-						Though she's pessimistic about ever being able to log out of the game, she resolves to fight on thanks to her comrade-in-arms’ encouraging words.
-                      </div>
-                      <ul class="p-chara__change is-pc">
-                        <li class="p-chara__change-btn is-current" data-type="m01">
-                          <span>Mito</span>
-                        </li>
-                        <li class="p-chara__change-btn" data-type="m02">
-                          <span>Mito 2</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-            <div class="c-footer">
+
+<div class="c-footer">
   <div class="c-footer__inner">
     <ul class="c-footer__bnr">
       <li class="c-footer__bnr-item"><a href="lightnovel/lightnovel.html" target="_blank" rel="noopener noreferrer" class="u-hover__opacity"><img src="../../assets/img/common/bnr_footer_01.jpg" alt="Tome 1"></a></li>
