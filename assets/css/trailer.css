@@ -18,7 +18,7 @@
 
 @media screen and (min-width: 901px) {
   .p-trailer__item {
-    width: 48%;
+    width: 50%;
   }
   .p-trailer__item:hover .c-thumb__cover::before {
     -webkit-transform: scale(1, 1);
@@ -66,4 +66,34 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-bottom: 40px;
+}
+
+.grille{
+	display: grid;
+	grid-template-columns: repeat(auto-fill,48.5%);
+	justify-content: center;
+	margin-top: 75px;
+	grid-row-gap: 50px;
+	grid-column-gap: 20px;
+}
+
+.box h2{
+	font-size: 20px;
+}
+.box p{
+	font-size: 15px;
+	line-height: 150%;
+}
+.box {
+    width: 100%;
+	height: 100%;
+	color: #fff;
+	align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .grille {
+    grid-template-columns: repeat(auto-fill,90%);
+  }
 }
